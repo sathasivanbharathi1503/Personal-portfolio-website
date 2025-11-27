@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Projects</title>
+
+<style>
+    body{
+        margin:0;
+        font-family: Arial;
+        background:#0d1b2a;
+        color:white;
+        padding:20px;
+    }
+    h1{
+        text-align:center;
+        margin-bottom:30px;
+    }
+     /* Background Video */
+        video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+    .projects{
+        display:grid;
+        grid-template-columns:repeat(auto-fill, minmax(250px, 1fr));
+        gap:20px;
+    }
+    .card{
+        background:#1e6604;
+        padding:20px;
+        border-radius:10px;
+        border:1px solid #415a77;
+    }
+    .card img{
+        width:100%;
+        height:150px;
+        border-radius:8px;
+        object-fit:cover;
+        margin-bottom:15px;
+    }
+    .card h3{
+        margin:0 0 10px 0;
+    }
+    .card p{
+        font-size:14px;
+        color:#e0e1dd;
+    }
+</style>
+</head>
+
+<body>
+    <!-- Background Video -->
+    <video autoplay loop muted playsinline>
+        <source src="project background.mp4" type="video/mp4">
+    </video>
+
+<h1>My Projects</h1>
+
+<div class="projects">
+
+    <!-- Project 1 -->
+    <div class="card">
+        <img src="main pic.png" alt="Project Image">
+        <h3>Portfolio Website</h3>
+        <p>A simple and responsive portfolio website created using HTML and CSS.</p>
+    </div>
+
+    <!-- Project 2 -->
+    <div class="card">
+        <img src="Dashboard visualization.png" alt="Project Image">
+        <h3>Zepto Sales Performance Analysis</h3>
+        <p>Interactive dashboard with KPIs and insights for business analysis.</p>
+    </div>
+
+    <!-- Project 3 -->
+    <div class="card">
+        <img src="Screenshot 2025-11-20 181201.png" alt="Project Image">
+        <h3>To-do list</h3>
+        <p>A basic To-Do list website built with HTML, CSS, and JavaScript.</p>
+    </div>
+
+     <!-- Project 4 -->
+    <div class="card">
+        <img src="night patrolling robot.jpg" alt="Project Image">
+        <h3>Night Patrolling Robot</h3>
+        <p>A night-patrolling robot that autonomously monitors areas and enhances security at night.</p>
+    </div>
+
+</div>
+
+</body>
+</html>

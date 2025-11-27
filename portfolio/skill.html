@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills Section</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Background Video */
+        video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            color: #ff8c00;
+            padding-bottom: 50px;
+        }
+
+        /* Main Heading */
+        h1 {
+            text-align: center;
+            margin-top: 30px;
+            margin-bottom: 10px;
+            font-size: 32px;
+            font-weight: bold;
+        }
+
+        /* Section Title */
+        .title {
+            text-align: center;
+            font-size: 26px;
+            margin-top: 40px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        /* Row Container */
+        .skills-row {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 25px 0;
+            gap: 25px;
+        }
+
+        /* 3D Skill Box */
+        .skill-box {
+            background: rgba(0, 0, 0, 0.6);
+            width: 170px;
+            height: 140px;
+            color: #ff8c00;
+            border-radius: 10px;
+            box-shadow: 
+                0 10px 20px rgba(251, 121, 7, 0.878),
+                inset 0 0 20px rgba(255,255,255,0.1);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 18px;
+            text-align: center;
+            padding: 10px;
+            transform-style: preserve-3d;
+            transition: 0.4s ease;
+        }
+
+        .skill-box:hover {
+            transform: rotateX(15deg) rotateY(-15deg) scale(1.1);
+            box-shadow: 
+                0 20px 40px rgba(0,0,0,0.8),
+                inset 0 0 25px rgba(255,255,255,0.15);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Background Video -->
+    <video autoplay loop muted playsinline>
+        <source src="46956-449623714.mp4" type="video/mp4">
+    </video>
+
+    <!-- MAIN HEADING -->
+    <h1>My Skills</h1>
+
+    <!-- TECHNICAL SKILLS -->
+    <div class="title">Technical Skills</div>
+    <div class="skills-row">
+        <div class="skill-box">Python
+            <br>
+            (Intermediate)
+        </div>
+        <div class="skill-box">MySQL
+            <br>
+            (Advanced)
+        </div>
+        <div class="skill-box">JavaScript
+            <br>
+            (Intermediate)
+        </div>
+        <div class="skill-box">HTML
+            <br>
+            (Intermediate)
+        </div>
+        <div class="skill-box">CSS
+            <br>
+            (Intermediate)
+        </div>
+        <div class="skill-box">R
+            <br>
+            (Basics)
+        </div>
+    </div>
+
+    <!-- TOOLS -->
+    <div class="title">Tools</div>
+    <div class="skills-row">
+        <div class="skill-box">MS-Excel</div>
+        <div class="skill-box">Power BI</div>
+        <div class="skill-box">Tableau</div>
+        <div class="skill-box">Pega Infinity</div>
+    </div>
+
+  
+
+</body>
+</html>
